@@ -1,1 +1,95 @@
-
+h1 {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 50px;
+  }
+  
+  .scroll-text {
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 25s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  body {
+    background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.2);
+  }
+  
+  .advertisement-container {
+    box-shadow: rgb(168, 251, 60) 90.3%;
+    background-image: linear-gradient(
+      to top,
+      white 0%,
+      10.1deg,
+      rgb(34, 126, 34) 2.9%,
+      rgb(168, 251, 60) 90.3%
+    );
+    border-radius: 5px;
+    color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+  }
+  
+  p {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 1.5;
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    background-color: chartreuse;
+    font-size: 15px;
+    border-radius: 40px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  button:hover {
+    background: white;
+    color: green;
+    cursor: pointer;
+  }
+  
+  span {
+    display: block;
+    text-align: center;
+  }
+  
+  a {
+    font-size: 15px;
+  }
+  
+  .coder {
+    font-size: 20px;
+  }
+  
